@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .mobile-container{
+            max-width: 100%;
+            background: #555;
+            height: 55.0rem;
+            color: white;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background: #333;
+            position: relative;
+        }
+        .topnav #myLink{
+            display: none;
+        }
+
+        .topnav a{
+            color: white;
+            padding: 1.4rem 1.5rem;
+            text-decoration: none;
+            font-size: 1.6rem;
+            display: block;
+        }
+
+        .topnav a.icon{
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            list-style: none;
+
+        }
+
+        .active{
+            background: #4caf50;
+            color: white;
+        }
+
+        .topnav a:hover{
+            background:#ddd;
+            color: black;
+        }
+        #Language{
+            padding: 0.5rem;
+        }
+
+        .hotel{
+            height: 160.0rem;
+            background-color: wheat;
+        }
+
+        .main{
+            background-color: rgb(83, 81, 81);
+            height: 40.0rem;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+       .first{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       
+       .first span{
+           display: flex;
+           justify-content: center;
+           background-color:white;
+           padding: 5.0rem 1.0rem;
+       }
+       li{
+           position: relative;
+           top: 4.0rem;
+           right: 17.0rem;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           list-style: none;
+           background-color: rgb(102, 102, 218);
+           margin: 0 0.5rem ;
+           height: 1.4rem;
+           width: 6.0rem;
+           border-radius: 0.5rem;
+           color: white;
+           box-shadow: 0 0 10px;
+       }
+
+       li:hover{
+           color:  rgb(102, 102, 218);
+           background-color: white;
+       }
+
+       a{
+           text-decoration: none;
+       }
+
+       .date{
+           position: relative;
+           bottom: 2.0rem;
+           left: 9.0rem;
+           background-color: whitesmoke;
+           box-shadow: 0 0 5px ;
+           border-color: rgb(241, 241, 241);
+           color: black;
+       }
+       input{
+           border: none;
+           background-color:whitesmoke ;
+       }
+      
+       .time{
+        position: relative;
+           bottom: 2.0rem;
+           left: 18.0rem;
+           background-color: whitesmoke;
+           box-shadow: 0 0 5px ;
+           border-color: rgb(241, 241, 241);
+           color: black; 
+       }
+
+
+      .ac{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        position: relative;
+        right: 4.0rem;
+        background-color: red;
+        color: white;
+        box-shadow: 0 0 10px ;
+        border-radius: 0.5rem;
+        width: 7.0rem;
+        top: 1.0rem;
+      }
+
+      .ac:hover{
+          background-color: white;
+          color: red;
+      }
+
+      .non{
+        display: flex;
+          justify-content: center;
+          align-items: center;
+        position: relative;
+        right: 2.0rem;
+        background-color: red;
+        color: white;
+        box-shadow: 0 0 10px ;
+        border-radius: 0.5rem;
+        width: 7.0rem;
+        top: 1.0rem; 
+        
+      }
+
+      .non:hover{
+          background-color: white;
+          color: red;
+      }
+
+
+      .state{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: -5.5rem;
+          right: 30.0rem;
+          font-size: 5.0rem;
+          
+      }
+
+      
+      select{
+          font-size: 1.5rem;
+          background-color:whitesmoke;
+          color: black;
+         
+          border-radius: 0.5rem;
+      }
+
+
+      option{
+          background-color: whitesmoke;
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    
+    <nav class="moblie-container">
+
+        <div class="topnav">
+            <a href="#" class="active">Traval .com</a>
+            <div id="myLink">
+                <ul>
+                <li><a href="login.html" target="_blank"><span><i class="fa fa-user"></i></span>Login</a></li><hr>
+                <li><a href="myfirstproject.html" target="_blank"> <span><i class="fa fa-home"></i></span> Home</a></li><hr>
+               <li> <a href="about.html" target="_blank"> <span><i class="fa fa-address-card"></i></span> About</a></li><hr>
+               <li> <a href="#" > <span><i class="fa fa-language"></i></span> laguage
+                   <br> <br><select name="Language" id="Language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                    </select>
+                </a></li>
+                  <h5>privacy policy</h5>
+                  <h5>Trems of service</h5>
+            </ul>
+            </div>
+            <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+    
+       </nav>
+ 
+        
+       <div class="main">
+
+        <div class="first">
+
+          <span>
+
+           
+           
+             <a href="#"><h2 class="date" >Date <input type="date"></h2></a>
+             <a href="#"><h2 class="time">Time <input type="time"></h2></a>
+
+             
+             <a href="#"><h3 class="ac">AC BUS</h3></a>
+             <a href="#"><h3 class="non">NON-BUS</h3></a>
+
+             <a href="#"> <li><i class="fa fa-phone"></i> Call</li></a>
+             <a href="#"><li>Book Now</li></a>
+             
+         </span>
+
+        </div>
+       
+        <div class="state">
+            <span>
+                
+                <select name="State" id="rajya">
+                    <option value="">Mumbai</option>
+                    <option value="">Hyadrabad</option>
+                    <option value="">Goa</option>
+                    <option value="">Delhi</option>
+                    <option value="">Kashamir</option>
+                    <option value="">Ladak</option>
+
+
+                </select>
+            </span>
+        </div>
+
+       </div>
+
+           
+
+
+
+
+     <script>
+        function myFunction(){
+        var showhide = document.getElementById('myLink');
+        if(showhide.style.display === "block"){
+            showhide.style.display = "none";
+        }else{
+            showhide.style.display = "block"
+        }
+    }
+   </script>
+</body>
+</html>
+
+
+
+
